@@ -39,7 +39,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Name = "MainUC";
-            this.Size = new System.Drawing.Size(933, 297);
+            this.Size = new System.Drawing.Size(832, 293);
             this.ResumeLayout(false);
 
         }

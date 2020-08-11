@@ -67,7 +67,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "FirstUC";
-            this.Size = new System.Drawing.Size(933, 297);
+            this.Size = new System.Drawing.Size(832, 293);
             this.Load += new System.EventHandler(this.FirstUC_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
