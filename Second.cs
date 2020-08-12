@@ -52,5 +52,22 @@ namespace Travel
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            bunifuTransition2.HideSync(mainUC1);
+            bunifuTransition1.ShowSync(firstUC1);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            bunifuTransition2.ShowSync(mainUC1);
+            bunifuTransition1.HideSync(firstUC1);
+        }
     }
 }

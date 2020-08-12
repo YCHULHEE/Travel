@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation1 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Second));
+            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation2 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -44,8 +47,11 @@
             this.button5 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.mainUC1 = new Travel.UserControls.MainUC();
+            this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
+            this.bunifuTransition2 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.firstUC1 = new Travel.UserControls.FirstUC();
+            this.mainUC1 = new Travel.UserControls.MainUC();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,6 +66,8 @@
             this.panel1.Controls.Add(this.button12);
             this.panel1.Controls.Add(this.button11);
             this.panel1.Controls.Add(this.button10);
+            this.bunifuTransition2.SetDecoration(this.panel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -69,6 +77,8 @@
             // button12
             // 
             this.button12.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bunifuTransition1.SetDecoration(this.button12, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.button12, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.button12.FlatAppearance.BorderSize = 0;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -83,6 +93,8 @@
             // button11
             // 
             this.button11.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bunifuTransition1.SetDecoration(this.button11, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.button11, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.button11.FlatAppearance.BorderSize = 0;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -93,10 +105,13 @@
             this.button11.TabIndex = 13;
             this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 
             this.button10.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bunifuTransition1.SetDecoration(this.button10, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.button10, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -107,11 +122,14 @@
             this.button10.TabIndex = 12;
             this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
+            this.bunifuTransition2.SetDecoration(this.panel2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panel2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 45);
             this.panel2.Name = "panel2";
@@ -122,6 +140,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.label1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label1.Location = new System.Drawing.Point(67, 8);
@@ -132,6 +152,8 @@
             // 
             // pictureBox1
             // 
+            this.bunifuTransition1.SetDecoration(this.pictureBox1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.pictureBox1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(13, 3);
             this.pictureBox1.Name = "pictureBox1";
@@ -148,6 +170,8 @@
             this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.button6);
             this.panel3.Controls.Add(this.button5);
+            this.bunifuTransition2.SetDecoration(this.panel3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panel3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 391);
             this.panel3.Name = "panel3";
@@ -157,6 +181,8 @@
             // button9
             // 
             this.button9.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bunifuTransition1.SetDecoration(this.button9, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.button9, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.button9.FlatAppearance.BorderSize = 0;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -173,6 +199,8 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
+            this.bunifuTransition1.SetDecoration(this.button8, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.button8, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -189,6 +217,8 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bunifuTransition1.SetDecoration(this.button7, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.button7, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -205,6 +235,8 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(170)))), ((int)(((byte)(245)))));
+            this.bunifuTransition1.SetDecoration(this.button6, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.button6, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -221,6 +253,8 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bunifuTransition1.SetDecoration(this.button5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.button5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.SystemColors.HighlightText;
@@ -232,11 +266,14 @@
             this.button5.Text = "Flights";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Controls.Add(this.panel2);
+            this.bunifuTransition2.SetDecoration(this.panel4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panel4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
@@ -247,33 +284,86 @@
             // 
             this.panel5.Controls.Add(this.firstUC1);
             this.panel5.Controls.Add(this.mainUC1);
+            this.bunifuTransition2.SetDecoration(this.panel5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panel5, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panel5.Location = new System.Drawing.Point(0, 99);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(832, 293);
             this.panel5.TabIndex = 5;
             // 
-            // mainUC1
+            // bunifuTransition1
             // 
-            this.mainUC1.AutoScroll = true;
-            this.mainUC1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mainUC1.BackgroundImage")));
-            this.mainUC1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.mainUC1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainUC1.Location = new System.Drawing.Point(0, 0);
-            this.mainUC1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.mainUC1.Name = "mainUC1";
-            this.mainUC1.Size = new System.Drawing.Size(832, 293);
-            this.mainUC1.TabIndex = 0;
+            this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.Leaf;
+            this.bunifuTransition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 1F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
+            // 
+            // bunifuTransition2
+            // 
+            this.bunifuTransition2.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.Mosaic;
+            this.bunifuTransition2.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 20;
+            animation2.Padding = new System.Windows.Forms.Padding(30);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.bunifuTransition2.DefaultAnimation = animation2;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 35;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // firstUC1
             // 
             this.firstUC1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("firstUC1.BackgroundImage")));
             this.firstUC1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuTransition1.SetDecoration(this.firstUC1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.firstUC1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.firstUC1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.firstUC1.Location = new System.Drawing.Point(0, 0);
             this.firstUC1.Name = "firstUC1";
             this.firstUC1.Size = new System.Drawing.Size(832, 293);
             this.firstUC1.TabIndex = 1;
             this.firstUC1.Visible = false;
+            // 
+            // mainUC1
+            // 
+            this.mainUC1.AutoScroll = true;
+            this.mainUC1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mainUC1.BackgroundImage")));
+            this.mainUC1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuTransition1.SetDecoration(this.mainUC1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.mainUC1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.mainUC1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainUC1.Location = new System.Drawing.Point(0, 0);
+            this.mainUC1.Margin = new System.Windows.Forms.Padding(9, 16, 9, 16);
+            this.mainUC1.Name = "mainUC1";
+            this.mainUC1.Size = new System.Drawing.Size(832, 293);
+            this.mainUC1.TabIndex = 0;
             // 
             // Second
             // 
@@ -282,6 +372,8 @@
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
+            this.bunifuTransition2.SetDecoration(this, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Second";
@@ -318,6 +410,9 @@
         private System.Windows.Forms.Panel panel5;
         private UserControls.MainUC mainUC1;
         private UserControls.FirstUC firstUC1;
+        private Bunifu.UI.WinForms.BunifuTransition bunifuTransition1;
+        private Bunifu.UI.WinForms.BunifuTransition bunifuTransition2;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }
 
