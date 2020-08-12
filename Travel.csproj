@@ -139,11 +139,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs">
+    <Compile Include="Asia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="Asia.Designer.cs">
+      <DependentUpon>Asia.cs</DependentUpon>
     </Compile>
     <Compile Include="Japan.cs">
       <SubType>Form</SubType>
@@ -151,11 +151,11 @@
     <Compile Include="Japan.Designer.cs">
       <DependentUpon>Japan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Second.cs">
+    <Compile Include="Europe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Second.Designer.cs">
-      <DependentUpon>Second.cs</DependentUpon>
+    <Compile Include="Europe.Designer.cs">
+      <DependentUpon>Europe.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -177,12 +177,15 @@
     <Compile Include="UserControls\MainUC.Designer.cs">
       <DependentUpon>MainUC.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Asia.resx">
+      <DependentUpon>Asia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Japan.resx">
       <DependentUpon>Japan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Second.resx">
-      <DependentUpon>Second.cs</DependentUpon>
+    <EmbeddedResource Include="Europe.resx">
+      <DependentUpon>Europe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

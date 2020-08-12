@@ -16,7 +16,7 @@ namespace Travel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Second());
+            Application.Run(new Europe());
 
         }
     }

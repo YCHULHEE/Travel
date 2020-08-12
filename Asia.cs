@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Travel
 {
-    public partial class Second : Form
+    public partial class Asia : Form
     {
-        public Second()
+        public Asia()
         {
             InitializeComponent();
 
@@ -79,6 +79,11 @@ namespace Travel
             frm.Owner = this; // 새 폼의 오너를 현재 폼으로
 
             frm.Show(); // 새폼 보여 주 기
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
