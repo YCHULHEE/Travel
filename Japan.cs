@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Travel
 {
-    public partial class Second : Form
+    public partial class Japan : Form
     {
-        public Second()
+        public Japan()
         {
             InitializeComponent();
 
@@ -55,9 +55,11 @@ namespace Travel
 
         private void button5_Click(object sender, EventArgs e)
         {
-            bunifuTransition2.HideSync(mainUC1);
+            bunifuTransition2.HideSync(japanUC1);
             bunifuTransition1.ShowSync(firstUC1);
         }
+
+
 
         private void button11_Click(object sender, EventArgs e)
         {
@@ -67,18 +69,23 @@ namespace Travel
         private void button10_Click(object sender, EventArgs e)
         {
             bunifuTransition2.HideSync(firstUC1);
-            bunifuTransition1.ShowSync(mainUC1);
+            bunifuTransition1.ShowSync(japanUC1);
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
             this.Visible = false; // 현재 폼 안보이게 하기
 
-            Japan frm = new Japan(); // 새 폼 생성
+            Second frm = new Second(); // 새 폼 생성
 
             frm.Owner = this; // 새 폼의 오너를 현재 폼으로
 
             frm.Show(); // 새폼 보여 주 기
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
